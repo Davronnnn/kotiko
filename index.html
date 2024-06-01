@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="./css/main.css" />
+
+        <title>Kotiko</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img class="header__logo" src="./assets/images/logo.svg" alt="kotiko" />
+
+                <ul class="header__list">
+                    <li class="header__item">
+                        <img class="header__item-img" src="./assets/images/map.svg" alt="map" />
+                        <span class="header__item-text">г. Санкт-Петербург ул. Ключевая, дом 32 </span>
+                    </li>
+                    <li class="header__item">
+                        <img class="header__item-img" src="./assets/images/clock.png" alt="map" />
+                        <span class="header__item-text">Круглосуточно </span>
+                    </li>
+                    <li class="header__item">
+                        <img class="header__item-img" src="./assets/images/mobile.png" alt="map" />
+                        <span class="header__item-text">+7 (905) 230-55-99 </span>
+                    </li>
+                    <li class="header__item">
+                        <button class="hedaer__btn btn">
+                            <img src="./assets/images/instagram.svg" alt="" />
+                            kotikozoohotel
+                        </button>
+                    </li>
+                </ul>
+            </header>
+            <main>
+                <img class="hero__plants" src="./assets/images/plants.png" alt="" />
+                <section class="hero">
+                    <!-- position -->
+
+                    <!-- content -->
+                    <div class="hero__main">
+                        <img class="hero__star" src="./assets/images/star.png" alt="" />
+                        <img class="hero__cat" src="./assets/images/cat-hero.png" alt="" />
+                        <div class="hero__left">
+                            <img class="hero__img" src="./assets/images/hand.png" alt="cat hand" />
+                        </div>
+
+                        <div class="hero__content">
+                            <h1 class="hero__title">Гостиница для кошек с видеонаблюдением</h1>
+                            <p class="hero__text">Будьте спокойны за вашего питомца, пока вы в отъезде</p>
+
+                            <form class="hero__form">
+                                <input class="hero__input" placeholder="Имя" name="name" type="text" />
+                                <input class="hero__input" placeholder="Телефон" name="phone" type="text" />
+
+                                <button type="submit" class="hero__btn btn">Отправить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <img src="./assets/images/heart.png" alt="heart" />
+                            <p>видеонаблюдение в режиме 24/7 и ежедневный фото/видеоотчет в мессенджеры</p>
+                        </li>
+                        <li class="hero__item">
+                            <img src="./assets/images/heart.png" alt="heart" />
+                            <p>просторные номера с окнами</p>
+                        </li>
+                        <li class="hero__item">
+                            <img src="./assets/images/heart.png" alt="heart" />
+                            <p>круглосуточное присутствие котоняни</p>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+
+        <section class="contact"></section>
+
+        <section class="cards">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/cat-hero.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/plants.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/cloud.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/cloud.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/cloud.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/cloud.png" alt="" />
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+        <script type="module">
+            import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+            const swiper = new Swiper(".swiper", {
+                // Optional parameters
+                // direction: "horizontal",
+                loop: true,
+                autoplay: true,
+                effect: "flip",
+                flipEffect: {
+                    slideShadows: false,
+                },
+                // slidesPerView: 1,
+                // spaceBetween: 10,
+
+                // breakpoints: {
+                //     // when window width is >= 320px
+                //     320: {
+                //         slidesPerView: 1,
+                //         spaceBetween: 20,
+                //     },
+                //     // when window width is >= 480px
+                //     480: {
+                //         slidesPerView: 2,
+                //         spaceBetween: 30,
+                //     },
+                //     // when window width is >= 640px
+                //     640: {
+                //         slidesPerView: 3,
+                //         spaceBetween: 40,
+                //     },
+                // },
+                // // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                },
+            });
+        </script>
+    </body>
+</html>
